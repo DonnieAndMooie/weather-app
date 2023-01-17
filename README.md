@@ -1,1 +1,1 @@
-# weather-app
+The aim of this project is to make an application in which the user can input a location and find weather information for that location
