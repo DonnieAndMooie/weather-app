@@ -20,9 +20,21 @@ function makeWeatherObject(data) {
   return weather;
 }
 
-async function main() {
-  const data = await getWeather("London");
-  makeWeatherObject(data);
+function search() {
+  const form = document.querySelector("form");
+  const search = document.querySelector("input");
+  form.addEventListener("submit", async () => {
+    event.preventDefault();
+    const location = search.value;
+    search.value = "";
+    try {
+      const data = await getWeather(location);
+      const weather = makeWeatherObject(data);
+    } catch (err) {
+      console.log(err);
+      alert(`${location} is not a valid location!`);
+    }
+  });
 }
 
-main();
+search();
