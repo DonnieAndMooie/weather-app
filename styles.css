@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Maven";
+    src: url(fonts/MavenPro-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Zilla";
+    src: url(fonts/ZillaSlab-Light.ttf);
+}
+
+body{
+    background-color: rgb(0, 0, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.weather{
+    background-color: rgb(42, 227, 240);
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon{
+    height: 250px;
+}
+
+h1{
+    font-family: Maven, Arial;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+h2{
+    font-family: Maven, Arial;
+    font-size: 24px;
+}
+
+.weather-text{
+    font-size: 25px;
+    font-family: Zilla, Arial;
+}
+
+.description{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: Zilla, Arial;
+}
+
+.temperature,
+.humidity,
+.wind{
+    font-family: Zilla, Arial;
+    font-size: 18px;
+}
+
+label,
+.submit{
+    font-family: Zilla, Arial;
+    font-weight: bold;
+}
+
+.humidity{
+    margin-bottom: 0;
+}
+
+.toggle{
+    background-color: yellow;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Maven, Arial;
+    margin-bottom: 10px;
+}
+
+.toggle:hover{
+    cursor: pointer;
+}
+
+.loading{
+    height: 80px;
+}
+
+.hide{
+    display: none;
+}

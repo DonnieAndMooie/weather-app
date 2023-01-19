@@ -9,11 +9,16 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <form action="#">
-        <label for="search">Enter Location: </label>
-        <input type="text" id="search" name="search"
-        maxlength="20">
-        <button>Get Weather</button>
-    </form>
+    <div class="weather">
+        <img src="images/icons8-loader-24.png" alt="loading..." class="loading hide">
+        <button class="toggle">°C/°F</button>
+        <form action="#" class="form">
+            <label for="search">Enter Location: </label>
+            <input type="text" id="search" name="search"
+            maxlength="20">
+            <button class="submit">Get Weather</button>
+        </form>
+    </div>
+    
 </body>
 </html>
